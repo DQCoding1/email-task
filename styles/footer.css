@@ -1,0 +1,40 @@
+footer{
+  width: 100%;
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--headerBgColor);
+  color: #cbcbcb;
+}
+
+
+.footer__copyright,
+.footer__terms{
+  width: 85%;
+  padding: 1.5rem 2rem;
+}
+
+.footer__brandContainer{
+  position: relative;
+  width: 100%;
+}
+
+.footer__brand{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 42px;
+  bottom: 0;
+  background-color: #c74738;
+  width: 40px;
+  height: 40px;
+}
+
+.footer__brandCircle{
+  width: 50%;
+  height: 30%;
+  border-radius: 10px;
+  border: 2px solid white;
+}

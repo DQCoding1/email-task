@@ -1,0 +1,60 @@
+header{
+  background-color: var(--headerBgColor);
+  width: 100%;
+}
+
+.header__brandContainer{
+  padding: 1rem 1.5rem;  
+}
+
+.header__brand{
+  color: var(--colorBrand);  
+}
+
+.header__offer{
+  display: flex;
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--secondayColor);
+}
+
+.header__offerText{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 65%;
+  font-size: 1.2rem;
+}
+
+
+.header__offer2{
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--cta-bgColor);
+}
+
+
+.header__offerDescription{
+  grid-column: 2/4;
+  color: white;
+  width: 80%;
+  line-height: 1.3rem;
+}
+
+
+.header__offerBtnContainer{
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+
+.header__offerBtn{
+  background-color: var(--cta-bgColor);
+  border-radius: 4px;
+  width: 135px;
+  height: 44px;
+  border: none;
+}
