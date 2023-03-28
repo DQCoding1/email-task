@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --cta-bgColor: #F0CC71;
+  --fontColor: #161513;
+  --colorBrand: #973f37;
+  --headerBgColor: #312d2a;
+  --secondayColor: #2d5258;
+}
+
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13.75px;
+  line-height: 16px;
+  color: var(--fontColor);
+}
+
+header{
+  background-color: var(--headerBgColor);
+  width: 100%;
+}
+
+.header__brandContainer{
+  padding: 1rem 1.5rem;  
+}
+
+.header__brand{
+  color: var(--colorBrand);  
+}
+
+.header__offer{
+  display: flex;
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--secondayColor);
+}
+
+.header__offerText{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 65%;
+  font-size: 1.2rem;
+}
+
+
+.header__offer2{
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--cta-bgColor);
+}
+
+
+.header__offerDescription{
+  grid-column: 2/4;
+  color: white;
+  width: 80%;
+  line-height: 1.3rem;
+}
+
+
+.header__offerBtnContainer{
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+
+.header__offerBtn{
+  background-color: var(--cta-bgColor);
+  border-radius: 4px;
+  width: 135px;
+  height: 44px;
+  border: none;
+}
