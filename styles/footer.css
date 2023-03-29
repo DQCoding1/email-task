@@ -8,11 +8,26 @@ footer{
   color: #cbcbcb;
 }
 
+.footer__terms{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
 
 .footer__copyright,
 .footer__terms{
   width: 85%;
   padding: 1.5rem 2rem;
+}
+
+.footer__term{
+  list-style: none;
+}
+
+.footer__termLink{
+  color: var(--mainColor);
+  text-decoration: none;
 }
 
 .footer__brandContainer{
@@ -25,7 +40,7 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
-  right: 42px;
+  right: 50px;
   bottom: 0;
   background-color: #c74738;
   width: 40px;
@@ -37,4 +52,10 @@ footer{
   height: 30%;
   border-radius: 10px;
   border: 2px solid white;
+}
+
+@media (max-width:614px){
+  .footer__brand{
+    right: 30px;
+  }
 }

@@ -21,6 +21,8 @@ header{
 .header__offerText{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
   width: 65%;
   font-size: 1.2rem;
 }
@@ -58,3 +60,14 @@ header{
   height: 44px;
   border: none;
 }
+
+.header__offerBtn{
+  cursor: pointer;
+}
+
+@media (max-width: 614px){
+  .header__offerDescription{
+    font-size: 1rem;
+  }
+}
+

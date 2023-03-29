@@ -38,6 +38,16 @@
   border-radius: 5px;
 }
 
+.card__texts{
+  display: flex;
+  border-radius: 6px 6px 0px 0px;
+}
+
+.card__textContainer{
+  width: 50%;
+  padding: 1rem;
+}
+
 .card__itemContainer{
   background-color: var(--secondayColor);
   width: 100%;
@@ -47,16 +57,6 @@
 
 .card__item{
   height: 100%;
-}
-
-.card__texts{
-  display: flex;
-  border-radius: 6,6,0,0;
-}
-
-.card__textContainer{
-  width: 50%;
-  padding: 1rem;
 }
 
 .card__text{
@@ -81,20 +81,6 @@
   padding: .5rem;
 }
 
-.card__icons{
-  background-color: var(--mainColor);
-  display: flex;
-  flex-direction: column;
-  gap: .5rem;
-  padding: 1rem;
-}
-
-.card__ctaCard{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .card__iconContainer{
   width: 100%;
   display: flex;
@@ -106,6 +92,19 @@
   width: 98px;
   height: 64px;
   margin: 0 auto;
+  filter: invert(55%) sepia(4%) saturate(2713%) 
+  hue-rotate(128deg) brightness(95%) contrast(85%);
+}
+
+.card__ctaCardContainer{
+  display: flex;
+  flex-direction: column;
+}
+
+.card__ctaCard{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card__ctaCondition{
@@ -120,11 +119,12 @@
 .card__btnContainer{
   width: 530px;
   height: 84px;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  border-radius: 0, 6, 6, 0;
+  border-radius: 0px 6px 6px 0px;
 
 }
 
@@ -134,6 +134,10 @@
   width: 135px;
   height: 44px;
   border: none;
+}
+
+.card__btn:hover{
+  cursor: pointer;
 }
 
 .main__joinTheThousandsContainer{
@@ -173,11 +177,39 @@
 }
 
 
-
 @media (max-width: 614px){
+  .main__takeAdvantageContainer{
+    font-size: 26px;
+    line-height: 28px;
+  }
+
+  .main__cardContainer{
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+  }
+
+  .main__card{
+    width: 100%;
+  }
+
   .card__texts{
     flex-direction: column;
     width: 100%;
+  }
+
+  .card__text{
+    text-align: start;
+    padding: 0;
+  }
+
+  .card__text--white{
+    margin: 0;
+    padding: 0;
+  }
+
+  .card__ctaCardContainer{
+    flex-direction: column-reverse;
   }
 
   .card__textContainer{
@@ -188,5 +220,14 @@
 
   .card__btnContainer{
     width: 100%;
+  }
+
+  .card__texts{
+    background-color: var(--secondayColor);
+  }
+
+  .card__icon{
+    filter: invert(98%) sepia(1%) saturate(130%) 
+    hue-rotate(212deg) brightness(117%) contrast(100%);
   }
 }
