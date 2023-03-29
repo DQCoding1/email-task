@@ -46,7 +46,6 @@
 }
 
 .card__item{
-  border: 2px solid red;
   height: 100%;
 }
 
@@ -101,7 +100,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid red;
 }
 
 .card__icon{
@@ -111,7 +109,6 @@
 }
 
 .card__ctaCondition{
-  border: 2px solid green;
   font-style: normal;
   font-weight: normal;
   font-size: 8px;
